@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: gray;
+	display: grid;
+	place-items: center;
+	height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appContainer {
+	height: 300px;
+	/* width: 600px; */
+	/* border: 2px solid yellow; */
+	position: relative;
+	display: flex;
+	background-color: #545454;
+	box-shadow: 5px 5px 5px black;
+	border-radius: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.appContainer__logo {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.drumpad {
+	padding: 25px;
+	flex: 0.6;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 7px;
+}
+.drumpad button {
+	padding: 30px;
+	cursor: pointer;
+	background-color: #e6e3e3;
+	overflow: hidden;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px black;
+}
+.controls {
+	padding: 25px;
+	flex: 0.4;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="range"] {
+	height: 3px;
+	-webkit-appearance: none;
+
+	outline: none;
+	margin: 10px 0;
+	width: 100%;
+	cursor: pointer;
+	background-color: black;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	appearance: none;
+	background-color: silver;
+	width: 5px;
+	height: 10px;
+}
+.inActive {
+	/* border: 2px solid red; */
+	visibility: hidden;
+}
+
+.switch span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.switch label {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 130px;
+}
+
+.control-input {
+	background-color: black !important;
+	color: white;
+	padding: 5px 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+@media screen and (max-width: 570px) {
+	.appContainer {
+		flex-direction: column;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.drumpad {
+		margin-top: 20px;
+		padding: 20px;
+		flex: 0.5;
+	}
+	.controls {
+		flex: 0.5;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+	.volume-control {
+		padding: 10px;
+	}
+	.switch {
+		padding: 10px;
+	}
 }
