@@ -69,7 +69,8 @@ function Drumpad({ sounds, soundName, setSoundName, power, volume }) {
 	}, [setKeyPressed, keyPressed, sounds, setSoundName, power, volume]);
 
 	const buttonClick = (e) => {
-		let pressedKey = e.target.innerText;
+		let pressedKey = e.target.id;
+		console.log(e.target.id);
 		let file;
 
 		sounds.forEach((item) => {
@@ -95,33 +96,15 @@ function Drumpad({ sounds, soundName, setSoundName, power, volume }) {
 
 	return (
 		<div className="drumpad">
-			<button id="Q" onClick={buttonClick}>
-				Q
-			</button>
-			<button id="W" onClick={buttonClick}>
-				W
-			</button>
-			<button id="E" onClick={buttonClick}>
-				E
-			</button>
-			<button id="A" onClick={buttonClick}>
-				A
-			</button>
-			<button id="S" onClick={buttonClick}>
-				S
-			</button>
-			<button id="D" onClick={buttonClick}>
-				D
-			</button>
-			<button id="Z" onClick={buttonClick}>
-				Z
-			</button>
-			<button id="X" onClick={buttonClick}>
-				X
-			</button>
-			<button id="C" onClick={buttonClick}>
-				C
-			</button>
+			<button id="Q" onClick={buttonClick}></button>
+			<button id="W" onClick={buttonClick}></button>
+			<button id="E" onClick={buttonClick}></button>
+			<button id="A" onClick={buttonClick}></button>
+			<button id="S" onClick={buttonClick}></button>
+			<button id="D" onClick={buttonClick}></button>
+			<button id="Z" onClick={buttonClick}></button>
+			<button id="X" onClick={buttonClick}></button>
+			<button id="C" onClick={buttonClick}></button>
 			{/* <button>HELLO</button> */}
 		</div>
 	);

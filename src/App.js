@@ -12,7 +12,7 @@ function App() {
 
 	return (
 		<div className="appContainer">
-			<h5 className="appContainer__logo">D DRUM MXN</h5>
+			<h5 className="appContainer__logo">Thea ♥ ♥ ♥</h5>
 			<Drumpad
 				sounds={sounds}
 				soundName={soundName}

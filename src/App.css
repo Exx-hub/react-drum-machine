@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,10 +7,12 @@
 }
 
 body {
-	background-color: gray;
+	background-color: violet;
 	display: grid;
 	place-items: center;
 	height: 100vh;
+	font-family: "Roboto", sans-serif;
+	color: rebeccapurple;
 }
 
 .appContainer {
@@ -17,7 +21,7 @@ body {
 	/* border: 2px solid yellow; */
 	position: relative;
 	display: flex;
-	background-color: #545454;
+	background-color: pink;
 	box-shadow: 5px 5px 5px black;
 	border-radius: 2px;
 }
@@ -26,7 +30,8 @@ body {
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	text-decoration: underline;
+	color: rebeccapurple;
+	font-size: 20px;
 }
 
 .drumpad {
@@ -63,7 +68,7 @@ input[type="range"] {
 	margin: 10px 0;
 	width: 100%;
 	cursor: pointer;
-	background-color: black;
+	background-color: rgb(87, 11, 74);
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -90,7 +95,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .control-input {
-	background-color: black !important;
+	background-color: rgb(87, 11, 74);
 	color: white;
 	padding: 5px 10px;
 	font-weight: bold;
@@ -98,6 +103,43 @@ input[type="range"]::-webkit-slider-thumb {
 	text-align: center;
 }
 
+#Q {
+	background-image: url("https://i.dlpng.com/static/png/1415482-unicorn-drawing-cartoon-clip-art-unicorn-unicorn-images-png-900_900_preview.png");
+	background-size: cover;
+}
+
+#W {
+	background-image: url("https://st4.depositphotos.com/19666466/21851/v/1600/depositphotos_218517550-stock-illustration-vector-illustration-small-unicorn-rainbow.jpg");
+	background-size: cover;
+}
+#E {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkaQ_gH1qhPdi3j8AeK8dYwlRGiMpZ_SuRA&usqp=CAU");
+	background-size: cover;
+}
+#A {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZqCJQqMJGkEe2m6C2qweeY6fXwSuZm32XHw&usqp=CAU");
+	background-size: cover;
+}
+#S {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7x2hPEx7c_aJ-mz5quKORH6PGB-gvweY4Ag&usqp=CAU");
+	background-size: cover;
+}
+#D {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwhMP2w0OnWtaKyYru505yzFgQ3JrNcKQ6kg&usqp=CAU");
+	background-size: cover;
+}
+#Z {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS643XVF4FewDU1gorbER1ukqfQMm_GCRY8bQ&usqp=CAU");
+	background-size: cover;
+}
+#X {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs8TGPb91aTLWa2r4d2wY7T_MXCR5BPrgiBw&usqp=CAU");
+	background-size: cover;
+}
+#C {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSYNaAfrxT_Oi40of-C-jLNEw0ZliEShhRCQ&usqp=CAU	");
+	background-size: cover;
+}
 @media screen and (max-width: 570px) {
 	.appContainer {
 		flex-direction: column;
